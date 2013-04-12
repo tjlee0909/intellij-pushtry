@@ -1,0 +1,23 @@
+<idea-plugin version="2">
+  <name>Pushtry Plugin</name>
+  <description>Eng-services pushtry implementation</description>
+  <version>0.9</version>
+  <vendor>Box Inc.</vendor>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="107.105"/>
+
+  <application-components></application-components>
+
+  <project-components></project-components>
+
+  <actions>
+      <action id="pushtry.LaunchPushtry" class="pushtry.LaunchPushtry" text="Launch _Pushtry"
+              description="Launch the pushtry script" icon="pushtry_icon.png">
+          <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
+          <keyboard-shortcut keymap="$default" first-keystroke="ctrl P"/>
+      </action>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij"></extensions>
+</idea-plugin>
